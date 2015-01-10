@@ -19,7 +19,6 @@
                   {:builds
                    {:client {:compiler
                              {:source-map "page/js/page.js.map"}}}}}}
-
  :cljsbuild
  {:builds
   {:client {:source-paths ["src"]

@@ -1,0 +1,35 @@
+html, body, #app {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  position: relative;
+  background: black;
+  color: white;
+
+}
+
+.message-container {
+  position: absolute;
+}
+
+.message {
+  font-size: 5em;
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 100;
+
+  -webkit-animation: pulse 3s ease infinite;
+  animation: pulse 3s ease infinite;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    opacity: 0;
+  }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+#hidden-message {
+  visibility: hidden;
+  display: inline-block;
+}
