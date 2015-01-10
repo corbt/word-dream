@@ -28,8 +28,8 @@ task copyPage(type: Copy)
 
 copyPage {
     description = 'Copies the page files into the assets dir'
-    from '../../page'
-    into 'assets/page'
+    from '../page'
+    into 'src/main/assets/page'
     include('**/*')
 }
 

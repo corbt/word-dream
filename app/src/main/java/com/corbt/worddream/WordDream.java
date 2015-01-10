@@ -12,16 +12,14 @@ public class WordDream extends DreamService {
     public void onAttachedToWindow() {
         super.onAttachedToWindow();
 
-        //allow user touch
-//        setInteractive(true);
-
-        //allow full screen
-        setFullscreen(true);
+//        setFullscreen(true);
 
         WebView view = new WebView(this);
-        view.loadUrl("file:///android_asset/page.html");
+        view.getSettings().setJavaScriptEnabled(true);
+        view.setBackgroundColor(getResources().getColor(android.R.color.black));
+        view.loadUrl("file:///android_asset/page/page.html");
 
-        setContentView(new WebView(this));
+        setContentView(view);
 
     }
 
