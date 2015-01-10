@@ -18,13 +18,13 @@
             :dev {:cljsbuild
                   {:builds
                    {:client {:compiler
-                             {:source-map "public/js/page.js.map"}}}}}}
+                             {:source-map "page/js/page.js.map"}}}}}}
 
  :cljsbuild
  {:builds
   {:client {:source-paths ["src"]
             :compiler
             {:preamble ["reagent/react.js"]
-             :output-dir "public/js/"
-             :output-to "public/js/page.js"
+             :output-dir "page/js/"
+             :output-to "page/js/page.js"
              :pretty-print true}}}})

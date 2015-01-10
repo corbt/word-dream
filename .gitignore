@@ -1,7 +1,7 @@
 # Lein
 
 /target
-/public/js
+/page/js
 /classes
 /checkouts
 pom.xml
@@ -39,3 +39,10 @@ proguard/
 
 # Log Files
 *.log
+
+# IDEA files
+/local.properties
+/.idea/workspace.xml
+/.idea/libraries
+.DS_Store
+/build
