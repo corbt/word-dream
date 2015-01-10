@@ -33,7 +33,3 @@ html, body, #app {
   visibility: hidden;
   display: inline-block;
 }
-
-.hidden {
-  display: none;
-}

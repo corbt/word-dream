@@ -5,14 +5,14 @@
 (def message-active (atom true))
 
 (defn message []
-  [:div.message "Touch Screen to Begin..."])
+  [:div.message "Touch Screen to Begin"])
 
 (defn wrapped-message [active]
   (defn- px [n] (str n "px"))
   (if active
     [:div.message-container {:style {:left (px (:x @coords)) :top (px (:y @coords))}}
       [message]]
-    [:span.hidden "not active"]))
+    [:span]))
 
 (defn app []
   (let [message-width (.-offsetWidth (.getElementById js/document "hidden-message"))

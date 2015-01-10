@@ -1,6 +1,7 @@
 # Lein
 
 /target
+/public/js
 /classes
 /checkouts
 pom.xml
